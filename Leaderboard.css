@@ -1,0 +1,25 @@
+.leaderboard-container {
+  text-align: center;
+  padding: 20px;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+th,
+td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #555;
+  color: #fff;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}

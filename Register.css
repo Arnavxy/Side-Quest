@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.company {
+  background-color: #8b0000;
+}
+
+.student {
+  background-color: #00008b;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.register-form h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.register-form input {
+  width: 80%;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.register-button,
+.switch-button,
+.go-back-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.register-button:hover,
+.switch-button:hover,
+.go-back-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.go-back-button {
+  margin-bottom: 20px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.avatar.selected {
+  border-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .register-form input {
+    width: 100%;
+  }
+
+  .register-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .register-button,
+  .switch-button,
+  .go-back-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+}
