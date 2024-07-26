@@ -68,3 +68,36 @@ Copy code
 npm run client
 Access the application:
 Open your browser and go to http://localhost:3000.
+
+Project Structure
+
+side-quest/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── components/
+│   │   ├── AvatarSelection.js
+│   │   ├── AvatarSelection.css
+│   │   ├── CompanyDashboard.js
+│   │   ├── CompanyDashboard.css
+│   │   ├── LandingPage.js
+│   │   ├── Leaderboard.js
+│   │   ├── Leaderboard.css
+│   │   ├── Login.js
+│   │   ├── Login.css
+│   │   ├── Profile.js
+│   │   ├── Profile.css
+│   │   ├── Register.js
+│   │   ├── Register.css
+│   │   ├── StudentDashboard.js
+│   │   ├── StudentDashboard.css
+│   │   └── VerifyEmail.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── server.js
+├── package.json
+└── README.md
+
